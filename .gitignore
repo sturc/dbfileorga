@@ -1,1 +1,5 @@
 /bin/
+src/dbfileorga/StartMitgliederDBOrderedSolution.java
+src/dbfileorga/StartMitgliederDBSolution.java
+src/dbfileorga/MitgliederDBOrderedSolution.java
+src/dbfileorga/MitgliederDBSolution.java
