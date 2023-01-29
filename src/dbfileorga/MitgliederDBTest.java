@@ -61,6 +61,18 @@ public class MitgliederDBTest {
 		assertFalse(db.iterator().hasNext());
 	}
 	
+	@Test 
+	public void testIteratorHasNext() {
+		Iterator<Record> iter = db.iterator();
+		for (int i=0; i<35; ++i) {
+			assertTrue(iter.hasNext());
+			iter.next();
+		}
+		assertFalse(iter.hasNext());
+		
+	}
+	
+	
 	@Test(expected = NoSuchElementException.class)
 	public void testIteratorNext(){
 		Iterator<Record> iter = db.iterator();

@@ -157,9 +157,9 @@ public class MitgliederDB implements Iterable<Record>
 	 
 	        public boolean hasNext() {
 	            if (currBlockIter.hasNext()){
-	                return true;
-	            }else if (currBlock < db.length){ //continue search in the next block
-	            	return db[currBlock+1].iterator().hasNext();
+	                return true; 
+	            } else if (currBlock < db.length) { //continue search in the next block
+	                return db[currBlock+1].iterator().hasNext();
 	            }else{ 
 	                return false;
 	            }
