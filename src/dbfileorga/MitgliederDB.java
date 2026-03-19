@@ -39,7 +39,7 @@ public class MitgliederDB implements Iterable<Record>
 
 		
 	protected int appendRecord(Record record){
-		//search for block where the record should be appended
+		//search for a block where the record should be appended
 		int currBlock = getBlockNumOfRecord(getNumberOfRecords());
 		int result = db[currBlock].insertRecordAtTheEnd(record);
 		if (result != -1 ){ //insert was successful
